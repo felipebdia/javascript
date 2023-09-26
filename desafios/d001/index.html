@@ -2,9 +2,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mensagens</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+        div {
+            display: inline-block;
+            background-color: rgb(216, 216, 216);
+            border: 1px solid black;
+            width: 90px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin-right: 5px;
+
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Desafio das Mensagens</h1>
+    <div id="botao1" onclick="clicar()">
+        Botão 1
+    </div>
+    <div id="botao2" onclick="clicar()">
+        Botão 2
+    </div>
+    <div id="botao3" onclick="clicar()">
+        Botão 3
+    </div>
+    <script>
+        var b1 = document.body.getElementById('botao1')
+        var b2 = document.body.getElementById('botao2')
+        var b3 = document.body.getElementById('botao3')
+        
+        b1.function clicar() {
+            alert.('Você clicou no 1ª botão!')
+        }
+    </script>
 </body>
 </html>
