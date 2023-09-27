@@ -11,10 +11,14 @@
 
     </div>
     <script>
-        var pais = window.document.getElementById('txtp')
-        function clicar {
-            if (pais == 'Brasil'){
-                
+        
+        function clicar() {
+            var pais = window.document.getElementById('txtp')
+            var res = window.document.getElementById('res')
+            if ( pais == 'Brasil'){
+                res.innerHTML ='Você é brasileiro.'
+            } else {
+                res.innerHTML = 'Você é estrangeiro.'
             }
         }
     </script>
