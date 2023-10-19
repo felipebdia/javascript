@@ -2,27 +2,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de temperaturas</title>
+    <title>Conversor R$ -> US$</title>
 </head>
 <body>
-    <h1>Conversor de Temperaturas</h1>
+    <h1>Conversor R$ -> US$</h1>
     <input type="button" value="Converter" onclick="clicou()">
     <div id="res">
         Clique no botão acima para iniciar.
     </div>
     <script>
+        var cot = window.prompt('Antes de mais nada. Quanto está a cotação do dólar agora?')
+        var c = parseFloat(cot)
         function clicou() {
-            var temp = window.prompt('Digite uma temperatura em ºC (Celsius)')
-            var c = parseFloat(temp)
+            var reais = window.prompt('Quantos R$ você tem na carteira?')
+            var r = parseFloat(reais)
             var res = document.getElementById('res')
 
-            var k = c + 273.15
-            var f = 1.8 * c + 32
-
+            var dol = r * c
             res.innerHTML = `<p>
-                                A temperatura de ${c}ºC, corresponde a... <br>
-                                ${k}ºK (Kelvin) <br>
-                                ${f}ºF (Fahrenheit)
+                                Isso quer dizer que você tem R$${r} ou US$${dol}.
                             </p>`
             
         }
