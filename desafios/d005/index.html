@@ -12,8 +12,26 @@
     </div>
     <script>
         function clicou() {
-            var m = window.prompt('Digite uma distância em metros (m)')
+            var metro = window.prompt('Digite uma distância em metros (m)')
+            var m = parseFloat(metro)
+            var res = document.getElementById('res')
 
+            var km = m / 1000
+            var hm = m / 100
+            var dam = m / 10
+            var dm = m * 10
+            var cm = m * 100
+            var mm = m * 1000
+            res.innerHTML = `<p>
+                                A distância de ${m} metros, corresponde a... <br>
+                                ${km} quilômetros (Km) <br>
+                                ${hm} hectômetros (Hm) <br>
+                                ${dam} decâmetros (Dam) <br>
+                                ${dm} decímetros (dm) <br>
+                                ${cm} centímetros (cm) <br>
+                                ${mm} milímetros (mm) 
+                            </p>`
+            
         }
         
     </script>
