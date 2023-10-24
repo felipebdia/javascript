@@ -11,16 +11,19 @@
         Clique no botão acima para iniciar.
     </div>
     <script>
-        var cot = window.prompt('Antes de mais nada. Quanto está a cotação do dólar agora?')
-        var c = parseFloat(cot)
+        
         function clicou() {
-            var reais = window.prompt('Quantos R$ você tem na carteira?')
-            var r = parseFloat(reais)
-            var res = document.getElementById('res')
+            var prod = window.prompt('Qual é o produto que você está comprando?')
+            var preco = window.prompt(`Qual é o preço de ${prod}?`)
+            var pre = parseFloat(preco)
+            var desc = pre * 0.10
 
-            var dol = r * c
-            res.innerHTML = `<p>
-                                Isso quer dizer que você tem R$${r} ou US$${dol}.
+            res.innerHTML = `
+                            <h1>Calculando desconto de 10% para ${prod}<h1>
+                            <p>
+                                O preço original era R$${pre}.<br>
+                                Você acaba de ganhar R$${desc} de desconto (-10%). <br>
+                                No fim
                             </p>`
             
         }
