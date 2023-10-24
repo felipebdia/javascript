@@ -1,0 +1,30 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Desconto</title>
+</head>
+<body>
+    <h1>Calcular Desconto</h1>
+    <input type="button" value="Desconto de 10%" onclick="clicou()">
+    <div id="res">
+        Clique no botão acima para iniciar.
+    </div>
+    <script>
+        var cot = window.prompt('Antes de mais nada. Quanto está a cotação do dólar agora?')
+        var c = parseFloat(cot)
+        function clicou() {
+            var reais = window.prompt('Quantos R$ você tem na carteira?')
+            var r = parseFloat(reais)
+            var res = document.getElementById('res')
+
+            var dol = r * c
+            res.innerHTML = `<p>
+                                Isso quer dizer que você tem R$${r} ou US$${dol}.
+                            </p>`
+            
+        }
+        
+    </script>
+</body>
+</html>
