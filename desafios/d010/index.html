@@ -8,21 +8,27 @@
     <h1>Resolvendo Bhaskara</h1>
     <input type="button" value="Calcular" onclick="clicou()">
     <div id="res">
-        Considerando uma equação no formatdo <strong>a</strong>x² + <strong>b</strong>x + <strong>c</strong> = 0, aperte o botão acima para calcular o valor de Δ
+        Considerando uma equação no formato <strong>a</strong>x² + <strong>b</strong>x + <strong>c</strong> = 0, aperte o botão acima para calcular o valor de Δ.
     </div>
     <script>
         
         function clicou() {
-            var a = window.prompt('Qual é o nome de a?')
-            var b = window.prompt('Qual é o nome de b?')
-            var c = window.prompt('Qual é o nome de c?')
+            var a0 = window.prompt('Qual é o valor de a?')
+            var b0 = window.prompt('Qual é o valor de b?')
+            var c0 = window.prompt('Qual é o valor de c?')
+
+            var a = parseFloat(a0)
+            var b = parseFloat(b0)
+            var c = parseFloat(c0)
+            
+            var delta = (b * b) - 4 * a * c
 
             res.innerHTML = `
                             <h1>Resolvendo Bhaskara<h1>
                             <p>
-                                A equação atual é <strong>${a}x² + ${b}x + ${c} = 0</strong<br>
-                                Com um aumento de ${reaju}%, o salário vai aumentar R$${adicional}. <br>
-                                E a partior daí, ${nome} vai passar a ganhar R$${novoSalario}.
+                                A equação atual é ${a}x² + ${b}x + ${c} = 0<br>
+                                O cálculo realizado será Δ = ${b}² - 4 . ${a} . ${c} <br>
+                                O valor calculado foi Δ = ${delta}
                             </p>`
         
         }
