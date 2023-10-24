@@ -17,13 +17,13 @@
             var preco = window.prompt(`Qual é o preço de ${prod}?`)
             var pre = parseFloat(preco)
             var desc = pre * 0.10
-
+            var pf = pre - desc
             res.innerHTML = `
                             <h1>Calculando desconto de 10% para ${prod}<h1>
                             <p>
                                 O preço original era R$${pre}.<br>
                                 Você acaba de ganhar R$${desc} de desconto (-10%). <br>
-                                No fim
+                                No fim, você vai pagar R$${pf} no produto ${prod}.
                             </p>`
             
         }
