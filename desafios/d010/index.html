@@ -1,0 +1,32 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula de Bhaskara</title>
+</head>
+<body>
+    <h1>Resolvendo Bhaskara</h1>
+    <input type="button" value="Calcular" onclick="clicou()">
+    <div id="res">
+        Considerando uma equação no formatdo <strong>a</strong>x² + <strong>b</strong>x + <strong>c</strong> = 0, aperte o botão acima para calcular o valor de Δ
+    </div>
+    <script>
+        
+        function clicou() {
+            var a = window.prompt('Qual é o nome de a?')
+            var b = window.prompt('Qual é o nome de b?')
+            var c = window.prompt('Qual é o nome de c?')
+
+            res.innerHTML = `
+                            <h1>Resolvendo Bhaskara<h1>
+                            <p>
+                                A equação atual é <strong>${a}x² + ${b}x + ${c} = 0</strong<br>
+                                Com um aumento de ${reaju}%, o salário vai aumentar R$${adicional}. <br>
+                                E a partior daí, ${nome} vai passar a ganhar R$${novoSalario}.
+                            </p>`
+        
+        }
+        
+    </script>
+</body>
+</html>
