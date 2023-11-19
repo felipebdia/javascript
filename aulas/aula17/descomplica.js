@@ -1,0 +1,13 @@
+var a = Math.cos(2)
+var b = Math.max(1, 2, 3, 4, 5)
+var c = Math.min(1, 2, 3, 4, 5)
+var d = Math.pow(2, 2)
+var e = Math.random()
+var f = Math.sqrt(9)
+
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)
+console.log(e)
+console.log(f)
